@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 24rem;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 40px;
+}
+
+main {
+    width: 100%;
+    max-width: 375px;
+}
+
+main p {
+    font-size: 20rem;
+    text-align: center;
+}
+
+.main-buttons-container {
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-buttons-container button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+}
+
+@media(hover: hover) {
+    .main-buttons-container button:hover {
+        width: 110px;
+        height: 110px;
+    }
+    .restart-button:hover {
+        background: #45B1F5;
+    }
+}
+
+@media(hover: none) {
+    .main-buttons-container button:active {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+#rockButton {
+    background: #DD5555;
+}
+
+#paperButton {
+    background: #3EA0DE;
+}
+
+#scissorButton {
+    background: #1A913C;
+}
+
+#pcChoose {
+    display: none;
+}
+
+.instructions {
+    width: 100%;
+    max-width: 375px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.instructions div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.instructions div p {
+    font-size: 48rem;
+    font-weight: 700;
+}
+
+footer {
+    width: 100%;
+    height: 35px;
+}
+
+footer p {
+    font-size: 16rem;
+    text-align: center;
+}
+
+footer p a {
+    color: black;
+}
+
+#pcChoose {
+    margin-bottom: 20px;
+}
+
+main figure {
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+}
+
+#result {
+    margin-bottom: 30px;
+}
+
+.restart-button-container {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.restart-button {
+    display: none;
+    width: 113px;
+    height: 32px;
+    background: #3EA0DE;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20rem;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        width: 80vw;
+        height: 120vh;
+        border: 3px solid #3EA0DE;
+        margin: 15px auto;
+        border-radius: 16px;
+    }
+}
+
+@media(min-width: 1024px) {
+    body {
+        width: 60vw;
+    }
+    h1 {
+        padding-top: 20px;
+    }
+}
+

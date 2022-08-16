@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <h1>Rock, Scissors and Paper</h1>
+    <main>
+        <p id="select">Select your option</p>
+        <div class="main-buttons-container">
+            <button id="rockButton" type="button" onclick="play('rock')">
+                <img src="./assets/icons8-clenched-fist-skin-type-1-96.png" alt="">
+            </button>
+            <button id="paperButton" type="button" onclick="play('paper')">
+                <img src="./assets/icons8-stop-gesture-skin-type-1-96.png" alt="">
+            </button>
+            <button id="scissorButton" type="button" onclick="play('scissor')">
+                <img src="./assets/icons8-hand-scissors-skin-type-1-96.png" alt="">
+            </button>
+        </div>
+        <p id="pcChoose">The Computer has choosen</p>
+        <figure class="pc-election-img-container">
+            <img src="" alt="" id="pcElectionImg">
+        </figure>
+        <p id="result"></p>
+        <div class="restart-button-container">
+            <button class="restart-button" type="button" onclick="restart()">Restart</button>
+        </div>
+    </main>
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <div>
+            <img src="./assets/icons8-clenched-fist-skin-type-1-96.png" alt="">
+            <p>></p>
+            <img src="./assets/icons8-hand-scissors-skin-type-1-96.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/icons8-hand-scissors-skin-type-1-96.png" alt="">
+            <p>></p>
+            <img src="./assets/icons8-stop-gesture-skin-type-1-96.png" alt="">
+        </div>
+        <div>
+            <img src="./assets/icons8-stop-gesture-skin-type-1-96.png" alt="">
+            <p>></p>
+            <img src="./assets/icons8-clenched-fist-skin-type-1-96.png" alt="">
+        </div>
+    </section>
+    <footer>
+        <p>Developed by <a href="">Angel Ramírez</a></p>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+</html>
